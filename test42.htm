@@ -1,0 +1,277 @@
+
+<head>
+<link rel="stylesheet" href="CSS File/css42.css"> 
+<link
+href=
+rel="stylesheet"
+integrity=
+crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<title>Document</title>
+</head>
+<!-- pop-up dialog box, containing a form -->
+<dialog
+id="favDialog"
+style="background-color:
+ #f7fafa;">
+ 
+<form
+method="dialog">
+ 
+<label
+for=""
+id="compteur"></label>
+ 
+<h3>
+ Voulez Vous Vraiment supprimer ce candidat?
+ 
+ 
+</h3>
+ 
+<div>
+ 
+<button
+class='btn
+ bg-primary'
+id="cancel"
+>Cancel</button>
+ 
+<button
+class='btn
+ bg-danger' id="confirmer">Confirm</button>
+ 
+</div>
+ 
+</form>
+</dialog>
+<dialog
+id="validationForm"
+style=
+>
+ 
+<form
+method="dialog"
+class="text-center">
+ 
+<h3
+id="erreurValidation">
+ </h3>
+ 
+<button
+class='btn
+ bg-primary w-70 '
+id="ok"
+>OK</button>
+ 
+</form>
+</dialog>
+<div
+class="form-style-5">
+ 
+<form>
+ 
+<fieldset>
+ 
+<legend><span
+class="number">1</span>
+ Candidate Info</legend>
+ 
+<input
+type="text"
+name="field1"
+placeholder="Your
+ Name *">
+ 
+<input
+type="email"
+name="field2"
+placeholder="Your
+ Email *">
+ 
+<textarea
+name="field3"
+placeholder="About
+ yourself"></textarea>
+ 
+<label
+for="job">Interests:</label>
+ 
+<select
+id="job"
+name="field4">
+ 
+<optgroup
+"box-shadow:
+ 2px 2px 1px greenyellow; width:30%;background-color: #e8eeef;color:red;position:relative;bottom:70%;"
+label="Indoors">
+ 
+<option
+value="fishkeeping">Fishkeeping</option>
+ 
+<option
+value="reading">Reading</option>
+ 
+ 
+</optgroup>
+ 
+<optgroup
+label="Outdoors">
+ 
+<option
+value="football">Football</option>
+ 
+<option
+value="swimming">Swimming</option>
+ 
+ 
+</optgroup>
+ 
+</select>
+ 
+<!--Radio button-->
+<div
+class="main">
+ 
+<label
+for="">Sexe</label>
+ 
+<div style="display:flex"
+>
+ 
+<input
+type="radio"
+name="checkbox"
+class="check"
+id="radio1"
+value='F'
+checked/>
+ 
+<label
+for="radio1"
+style="display:flex"
+>
+ 
+<div
+class="container">
+ 
+<div
+class="cRadioBtn">
+ 
+<div
+class="overlay"></div>
+ 
+<div
+class="drops
+ xsDrop"></div>
+ 
+<div
+class="drops
+ mdDrop"></div>
+ 
+<div
+class="drops
+ lgDrop"></div>
+ 
+</div>
+ 
+</div>
+ 
+<h3>Feminin</h3>
+ 
+</label>
+ 
+<input
+type="radio"
+value='M'
+name="checkbox"
+class="check"
+id="radio2"
+/>
+ 
+<label
+for="radio2"
+style="display:flex">
+ 
+<div
+class="container">
+ 
+<div
+class="cRadioBtn">
+ 
+<div
+class="overlay"></div>
+ 
+<div
+class="drops
+ xsDrop"></div>
+ 
+<div
+class="drops
+ mdDrop"></div>
+ 
+<div
+class="drops
+ lgDrop"></div>
+ 
+</div>
+ 
+</div>
+ 
+<h3>Masculin</h3>
+ 
+</label>
+</div>
+ 
+</div> 
+ 
+</fieldset>
+ 
+<fieldset>
+ 
+<legend><span
+class="number">2</span>
+ Additional Info</legend>
+ 
+<textarea
+name="field6"
+placeholder="About
+ Your School"></textarea>
+ 
+</fieldset>
+ 
+<input
+type="button"
+onclick=""
+class="m-3"
+id="ajouter"
+ value="Apply"
+/>
+ 
+</form>
+ 
+</div>
+<h2
+class="text-center">
+ Liste des Candidats</h2>
+ 
+<table id="tb"
+class="table
+ table-bordered table-striped w-50 m-3 mx-auto">
+ 
+<tr
+id="entete"><th>Nom</th>
+ 
+<th>Email</th>
+ 
+<th>A propos du candidat</th>
+ 
+<th>Loisirs</th>
+ 
+<th>Sexe</th>
+ 
+<th>Actions</th></tr>
+ 
+</table>
+ 
+<script src="java_script/test42.js"></script>

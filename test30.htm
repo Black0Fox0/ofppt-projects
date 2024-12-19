@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS File/css30.css">
+</head>
+<body>
+    <div class="menu-toggle">
+        <span class="icon">&#9776;</span> <!-- رمز القائمة (يمكن استبداله بأي رمز مناسب) -->
+      </div>
+      <ul class="menu">
+        <li><a href="#">الصفحة الرئيسية</a></li>
+        <li><a href="#">خدماتنا</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+            menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('show'); // تبديل عرض القائمة عند النقر
+            });
+        });
+    </script>
+</body>
+</html>

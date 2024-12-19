@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFM</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body style="margin-left: 25px;">
+    <h1>Commander des Consoles</h1>
+
+    <label for="console" class="fw-bold">Console </label><br>
+    <select id="console" name="console" required>
+        <option value="none" selected disabled>Choisir un Console</option>
+        <!-- <option value="playstation 5">Playstation 5</option>
+        <option value="xbox x.jpeg">Xbox Series X</option>
+        <option value="nintendo switch.jpeg">Nintendo Switch</option>
+        <option value="laptop gaming.jpeg">Laptop Gaming</option> -->
+    </select><br><br>
+    <label for="quantité" class="fw-bold">Quantité</label><br>
+    <input type="range" id="quantité" name="quantité" min="1"
+    max="20" value="1">
+    <span id="quantité-value">1</span><br><br>
+
+    <button class="btn btn-primary" onclick="addConsoleToCart()">Ajouter au panier</button><br><br><br>
+
+    <h1>Panier de commandes</h1>
+    <table class="table table-hover table-borderless">
+        <thead class="fw-bold">
+            <tr>
+                <td style="width: 40%;">REFERENCE</td>
+                <td style="width: 20%;">QUANTITE</td>
+                <td style="width: 20%;">IMAGE</td>
+                <td style="width: 20%;">ACTION</td>
+            </tr>
+        </thead>
+        <tbody id="commandes" style="border-bottom: 1px solid black;">
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    Total HT
+                </td>
+                <td colspan="2" class="text-center" id="totalHT">0DHs</td>
+            </tr>
+            <tr>
+                <td>
+                    Total TTC
+                </td>
+                <td colspan="2" class="text-center" id="totalTTC">0DHs</td>
+            </tr>
+            <td>
+                <button class="btn btn-success" onclick="Commander()">Commander</button>
+            </td>
+        </tfoot>
+    </table>
+</body>
+<script src="java_script/java49.js"></script>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOC-20230915-WA0001. 1</title>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <script src="./bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jQuery/jQuery.js"></script>
+  </head>
+  <body>
+    <div id="sele"></div>
+    <div id="tab1"></div>
+    <div id="tab2"></div>
+    <div id="app"></div>
+  </body>
+</html>
+<script type="text/babel">
+  var elems = ["Element1", "Element2", "Element3", "Element4", "Element5"];
+  const stagers = [
+    { id: 1, nom: "AitAli", prenom: "Ayoub", age: 19 },
+    { id: 2, nom: "Kharmoche", prenom: "Bader", age: 20 },
+    { id: 3, nom: "Belaali", prenom: "Ali", age: 18 },
+  ];
+  const pers = [
+    { id: 4, nom: "Hamadi", prenom: "Hamid", age: 23 },
+    { id: 5, nom: "Bidox", prenom: "Aymen", age: 33 },
+    { id: 6, nom: "Chegar", prenom: "Abdellah", age: 28 },
+  ];
+
+  const Select = function () {
+    return (
+      <select name="elems" id="elms">
+        {elems.map(function (v, i) {
+          return (
+            <option key={i} value={v}>
+              {v}
+            </option>
+          );
+        })}
+      </select>
+    );
+  };
+
+  var BackgroundColor = "#addadd";
+  var style = { margin: "10px" };
+
+  /*
+    var table = <table style={style}>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>nom</th>
+                <th>prenom</th>
+                <th>age</th>
+            </tr>
+        </thead>
+            <tbody>
+                {stagers.map((v,i)=>{
+                    return <tr key={i}>
+                            <td>{v.id}</td>
+                            <td>{v.nom}</td>
+                            <td>{v.prenom}</td>
+                            <td>{v.age}</td>
+                           </tr>
+                })}
+            </tbody>
+        </table>
+*/
+  /*
+const supprimer = (e)=>{
+    let row = e.parentNode.parentNode;
+    document.querySelector(`.table`).removeChild(row);
+}
+
+const Table = function(){
+    return <table style={style} className="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>nom</th>
+                <th>prenom</th>
+                <th>age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+            <tbody>
+                {stagers.map((v,i)=>{
+                    return <tr key={i} id={v.nom}>
+                            <td>{v.id}</td>
+                            <td>{v.nom}</td>
+                            <td>{v.prenom}</td>
+                            <td>{v.age}</td>
+                            <td>
+                                <button className="btn btn-danger" onClick={()=>supprimer(this)}>Supprimer</button>
+                            </td>
+                           </tr>
+                })}
+            </tbody>
+        </table>
+    }
+*/
+
+  const Table = function (e) {
+    return (
+      <table className="table table-bordered my-3">
+        <thead>
+          <tr>
+            <th colspan="4" className="text-center display-5 ">
+              {e.title}
+            </th>
+          </tr>
+          <tr>
+            <th>Id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>age</th>
+          </tr>
+        </thead>
+        <tbody>
+          {e.list.map((v, i) => {
+            return (
+              <tr key={i} id={v.nom}>
+                <td>{v.id}</td>
+                <td>{v.nom}</td>
+                <td>{v.prenom}</td>
+                <td>{v.age}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    );
+  };
+
+
+  var elems = ["a", "b", "c", "d", "e"];
+
+  class Element extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    
+    render() {
+      return <li style={{ color: this.props.color }}>{this.props.elem}</li>;
+    }
+  }
+
+  class ListeElements extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+
+    render() {
+      return (
+        <ul>
+          {" "}
+          {this.props.elems.map((elem, index) => {
+            return <Element key={index} elem={elem} color={this.props.color} />;
+          })}{" "}
+        </ul>
+      );
+    }
+  }
+  ReactDOM.render(
+    <ListeElements elems={elems} color="red" />,
+    document.getElementById("app")
+  );
+
+
+  ReactDOM.render(<Select />, document.getElementById("sele"));
+  //ReactDOM.render(table, document.getElementById("tab"));
+  //ReactDOM.render(<Table/>, document.getElementById("tab"));
+  ReactDOM.render(
+    <Table list={stagers} title="Stagers" />,
+    document.getElementById("tab1")
+  );
+  ReactDOM.render(
+    <Table list={pers} title="Personne" />,
+    document.getElementById("tab2")
+  );
+</script>
+<style></style>

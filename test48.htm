@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery/jQuery.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div>
+    <form action="#">
+    <table>
+        <tr>
+            <td colspan="2"><h2 class="text-center">Formulaire d'inscription</h2></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nom" class="form_label">Nom :</label>
+            </td>
+            <td>
+                <input type="text" id="nom">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="prénom" class="form_label">Prénom :</label>
+            </td>
+            <td>
+                <input type="text" id="prénom">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="age" class="form_label">Age :</label>
+            </td>
+            <td>
+                <input type="number" id="age">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="sexe" class="form_label">Sexe :</label>
+            </td>
+            <td>
+                <label for="F" class="inputLabel">
+                    <input type="radio" name="sexe" value="Féminin" id="F" checked>
+                    Féminin
+                </label>
+                <label for="M" class="inputLabel">
+                    <input type="radio" name="sexe" value="Masculin" id="M">
+                    Masculin
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pays" class="form_label">Pays :</label>
+            </td>
+            <td>
+                <select name="pays" id="pays">
+                    <option value="Belgique">Belgique</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="France">France</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="discipline" class="form_label">Discipline :</label>
+            </td>
+            <td>
+                <label for="Marathon" class="inputLabel">
+                    <input type="checkbox" name="discipline" id="Marathon" value="Marathon">Marathon
+                </label>
+                <label for="Natation" class="inputLabel">
+                    <input type="checkbox" name="discipline" id="Natation" value="Natation">Natation
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label for="Sprint" class="inputLabel">
+                    <input type="checkbox" name="discipline" id="Sprint" value="Sprint">Sprint
+                </label>
+                <label for="Saut" class="inputLabel">
+                    <input type="checkbox" name="discipline" id="Saut" value="Saut">Saut
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="btn btn-primary" id="submit" onclick="enregistrer()">Enregistrer</button></td>
+        </tr>
+    </table>
+    </form>
+    <div style="margin-top: 50px;" >
+        <table style="width: 100%;" class="table-bordered table-hover bg-white text-dark" id="users">
+            <thead class="fw-bold">
+                <tr>
+                <td>Nom</td>
+                <td>Prénom</td>
+                <td>Age</td>
+                <td>Sexe</td>
+                <td>Pays</td>
+                <td>Discipline</td>
+                <td>Action</td>
+            </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script src="java_script/java48.js"></script>
+<style>
+    body{
+        background-color: #f5f5f5;
+        /* centre */
+        display: flex;
+        justify-content: center;
+
+    }
+    table{
+        background-color: blue;
+        color: white;
+        width: 100%;
+    }
+    input[type="text"], input[type="number"]{
+        width: 100%;
+    }
+    td{
+        width: 5%;
+        text-align: center;
+    }
+    .form_label{
+        font-size: large;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    .inputLabel{
+        background-color: rgb(216, 216, 216);
+        color: black;
+        margin-right: 20px;
+        padding: 2px;
+    }
+    label[for="Saut"]{
+        margin-left: 23px;
+    }
+    #submit{
+        background-color: rgb(255, 234, 0) !important;
+        color: blue !important;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        margin: 20px;
+        padding: 10px;
+    }
+    #pays{
+        width: 50%;
+        background-color: rgb(216, 216, 216);
+    }
+    #users{
+        width: 80%;
+    }
+</style>
+</html>

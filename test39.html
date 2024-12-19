@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GG</title>
+    <link rel="icon" href="images/star-icon.png" />
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <center class="mt-5">
+      <input type="number" name="number" id="guess" min="0" max="1000" />
+      <button id="show" onclick="run()" class="btn btn-primary">Guess</button>
+    </center>
+    <hr>
+    <center class="mt-5">
+      <button onclick="surface()">Calculer Surface</button>
+      <label for="surface" id="display"></label>
+    </center>
+    <hr>
+    <center class="mt-5">
+      <button onclick="calcul()">Calculer Surface Rectangle</button>
+      <label for="surface" id="cal"></label>
+    </center>
+    <hr>
+    <center class="mt-5">
+      <button onclick="affiche()">Saisie Number</button>
+      <label for="surface" id="saisie"></label>
+    </center>
+    <hr>
+    <center class="mt-5">
+      <h1><span id="h">00</span>:<span id="m">00</span>:<span id="s">00</span></h1>
+      <div class="row">
+        <div class="col-4 text-end">
+          <button onclick="stop()" class="btn btn-danger">Stop</button>
+        </div>
+        <div class="col-4 text-center">
+          <button onclick="play()" class="btn btn-success">Play</button>
+        </div>
+        <div class="col-4 text-start">
+          <button onclick="replay()" class="btn btn-warning">Replay</button>
+        </div>
+      </div>
+    </center>
+  </body>
+  <script src="java_script/java39.js"></script>
+</html>

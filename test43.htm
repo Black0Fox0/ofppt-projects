@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS File/css43.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="images/star-icon.png">
+</head>
+<body>
+    <dialog class="container text-center mt-3" id="ajouter_ligne">
+        <form class="row container" method="dialog">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Fullname">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" placeholder="Enter Number">
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="Maroc">Maroc</option>
+            <option value="France">France</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="India">India</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="North Korea">North Korea</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Russia">Russia</option>
+            <option value="Spain">Spain</option>
+        </select>
+        <label class="my-1" for="man">Man <input type="radio" name="sex" id="man" value="Man" checked></label>
+        <label class="my-1" for="woman">Woman <input type="radio" name="sex" id="woman" value="Woman"></label>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary" onclick="ajouter_confirme()">Ajauter</button>
+        </div>
+        </form>
+    </dialog>
+    <dialog class="container text-center mt-3" id="modifier_ligne">
+        <form class="row container" method="dialog">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name_edit" placeholder="Enter Fullname">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age_edit" min="1" placeholder="Enter Number">
+        <label for="country">Country</label>
+        <select name="country" id="country_edit">
+            <option value="Maroc">Maroc</option>
+            <option value="France">France</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="India">India</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Germany">Germany</option>
+            <option value="Italy">Italy</option>
+            <option value="North Korea">North Korea</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Qatar">Qatar</option>
+            <option value="Russia">Russia</option>
+            <option value="Spain">Spain</option>
+        </select>
+        <label class="my-1 radio_edit" for="man">Man <input type="radio" name="sex_edit" id="man" value="Man" checked></label>
+        <label class="my-1 radio_edit" for="woman">Woman <input type="radio" name="sex_edit" id="woman" value="Woman"></label>
+        <div class="btn-group">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-success" id="modifier_confirme">Modifier</button>
+        </div>
+    </form>
+    </dialog>
+    <dialog id="validationForm">
+    <form method="dialog" class="text-center">
+    <h3 id="Validation">Personne ajouter</h3>
+    <button class='btn bg-primary w-70 ' id="ok">OK</button>
+    </form>
+    </dialog>
+    <dialog id="falidSupprimer" 
+    style="background-color: #f7fafa;">
+    <form method="dialog">
+        <label for="" id="compteur">10s</label>
+        <h3 >Voulez Vous Vraiment supprimer ce lingne?</h3>
+    <div>
+        <button class='btn bg-secondary' id="cancel">Cancel</button>
+        <button class='btn bg-danger' id="confirmer_supprimer">Confirm</button>
+    </div>
+    </form>
+    </dialog>
+    <div class="container text-end mt-3">
+        <input type="text" style="width: 90%;margin-right: 2%;" placeholder="Search by Full Name" id="search">
+        <button class="btn btn-outline-primary" onclick="ajouter()">Ajouter</button>
+    </div>
+    <div class="container">
+        <table class="table table-hover table-responsive text-capitalize text-center my-2">
+            <thead>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Sex</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="java_script/java43.js"></script>
+</html>
+

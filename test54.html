@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <script src="./bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jQuery/jQuery.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script type="text/babel">
+    const products = [ 
+        { id: 1, title: 'Playstation 5', price: '5490 DH', thumbnail : './images/playstation 5.jpeg' },
+        { id: 2, title: 'Nintendo Switch', price: '3190 DH', thumbnail : './images/nintendo switch.jpeg' },
+        { id: 3, title: 'Pc Portable Chromebook Acer', price: '3640 DH', thumbnail: './images/laptop gaming.jpeg' },
+        { id: 4, title: 'Xbox Series X', price: '5270 DH', thumbnail: './images/xbox x.jpeg' }, ];
+
+    class Product extends React.Component {
+      constructor(props) {
+        super(props);
+      }
+
+      render() {
+        return (
+          <div className="col">
+              <div className="card shadow-sm">
+                <img className="bd-placeholder-img card-img-top" src={this.props.thumbnail} alt="" />
+                  <div className="card-body">
+                    <p className="card-title">{this.props.title}</p>
+                     <p className="card-text">{this.props.price}</p>
+                      <div className="d-flex justify-content-between align-items-center">
+                         <div className="btn-group">
+                             <button type="button" className="btn btn-sm btn-outline-secondary">Ajouter au panier</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        );
+      }
+    }
+
+    class Products extends React.Component {
+      constructor(props) {
+        super(props);
+      }
+
+      render() {
+        return (
+          <div className="row">
+            {" "}
+            {this.props.list.map((elem, index) => {
+              return <Product key={index} title={elem.title}  price={elem.price}  thumbnail={elem.thumbnail}/>;
+            })}
+            {" "}
+          </div>
+        );
+      }
+    }
+    ReactDOM.render(
+      <Products list={products} />,
+      document.getElementById("app")
+    );
+  </script>
+</html>

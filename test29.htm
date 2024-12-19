@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex site web</title>
+    <link rel="stylesheet" href="CSS File/css29.css">
+</head>
+<body>
+    <div class="tete">
+        <div class="img_tete1"><img src="images/ofppt.png" width="150pw" height="150px"></div>
+        <div class="img_tete2"><img src="images/sourie.png"></div>
+    </div>
+    <div class="menu-toggle">
+        <span class="icon">&#9776; Menu</span>
+    </div>
+    <div class="menu">
+        <div class="item1">item 1</div>
+        <div class="item1">item 2</div>
+        <div class="item1">item 3</div>
+        <div class="item1">item 4</div>
+        <div class="item1">item 5</div>
+        <div class="item1">item 6</div>
+    </div>
+    <div class="content1">
+        <div class="content2 main1">
+            <img src="images/village.jpg" height="200px">
+            <h1>This is a title</h1>
+            <p>&copy;Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero
+                 exercitationem blanditiis magnam! Natus odit maxime asperiores, sint,
+                 sapiente recusandae quasi perferendis molestiae soluta fuga provident</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero 
+                exercitationem blanditiis magnam! Natus odit maxime asperiores, sint,
+                 sapiente recusandae quasi perferendis molestiae soluta fuga provident</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem libero 
+                exercitationem blanditiis magnam! Natus odit maxime asperiores, sint,
+                 sapiente recusandae quasi perferendis molestiae soluta fuga provident</p>
+        </div>
+        <div class="content2 main2">
+            <h1>Hot items</h1>
+            <ul>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                <li>Doloribus sit quis eius, ad architecto,eos veritatis debitis illum ipsa expedita at,</li>
+                <li>animi fuga dolores nesciunt numquam. Aliquam reiciendis ipsam deleniti?</li>
+            </ul>
+            <h1>New items</h1>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minima</li>
+                <li>iste molestiae unde dolorum, facilis aspernatur nemo praesentium cumque tenetur debitis magni</li>
+                <li>vero cum corporis quibusdam reprehenderit excepturi. Maxime, suscipit?</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+        <h1 style="margin-left: 2%;">In the spotilight</h1>
+    <div class="content1">
+        <div class="content2">
+            <img src="images/nature.jpg" height="70px" width="100%" class="img_c">
+            <p class="but_img">Lorem ipsum dolor sit amet</p>
+            <p>consectetur adipisicing elit. Ipsam, eligendi quasi </p>
+            <p>aut debitis, quo quis adipisci eos harum dolorum asperiores.</p>
+            <p>reprehenderit repellendus at id, ducimus qui ratione in blanditiis laborum </p>
+            <p class="a"><a href="#">read more</a></p>
+        </div>
+        <div class="content2">
+            <img src="images/night.jpg" height="70px" width="100%" class="img_c">
+            <p class="but_img">Lorem ipsum dolor sit amet</p>
+            <p>consectetur adipisicing elit. Ipsam, eligendi quasi </p>
+            <p>aut debitis, quo quis adipisci eos harum dolorum asperiores.</p>
+            <p>reprehenderit repellendus at id, ducimus qui ratione in blanditiis laborum </p>
+            <p class="a"><a href="#">read more</a></p>
+        </div>
+        <div class="content2">
+            <img src="images/eart-space.jpg" height="70px" width="100%" class="img_c">
+            <p class="but_img">Lorem ipsum dolor sit amet</p>
+            <p>consectetur adipisicing elit. Ipsam, eligendi quasi </p>
+            <p>aut debitis, quo quis adipisci eos harum dolorum asperiores.</p>
+            <p>reprehenderit repellendus at id, ducimus qui ratione in blanditiis laborum </p>
+            <p class="a"><a href="#">read more</a></p>
+        </div>
+    </div>
+    <div class="footer">
+            <div class="item2 part1">item 1</div>
+            <div class="item2 part1">item 2</div>
+            <div class="item2 part1">item 3</div>
+            <div class="item2 part2">item 4</div>
+            <div class="item2 part2">item 5</div>
+            <div class="item2 part2">item 6</div>
+        
+    </div>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        menuToggle.addEventListener('click', function () {
+        menu.classList.toggle('show'); 
+        });
+    });
+</script>

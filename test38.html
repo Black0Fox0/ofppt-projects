@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Multiplication</title>
+    <link rel="icon" href="images/star-icon.png">
+    <link
+      rel="stylesheet"
+      href="bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <script src="bootstrap/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jQuery/jQuery.js"></script>
+</head>
+<body>
+    <center>
+      <div class="container mt-5">
+        <label for="lig">Nombre de lignes</label>
+        <input type="number" id="num1" min="0" step="1">
+        <label for="col">Nombre de colonnes</label>
+        <input type="number" id="num2" min="0" step="1">
+        <input type="button" id="show" value="Générer les tables" class="btn btn-primary">
+      </div>
+      <div class="container mt-3">
+        <table id="tablez">
+
+        </table>
+      </div>
+
+    </center>
+</body>
+<style>
+  table{
+    border: 1px black solid;
+    width: 100%;
+  }
+  td{
+    border: 1px black solid;
+    text-align: center;
+
+  }
+  tr{
+    border: 1px black solid;
+    text-align: center;
+
+  }
+</style>
+<script src="java_script/java38.js"></script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paiement en ligne</title>
+    <link rel="stylesheet" href="CSS File/css13.css">
+</head>
+<body>
+    <center><h1>paiement en ligne</h1></center>
+    <form>
+    <ol type="I">
+        <li>
+            <h3> Identié</h3>
+            <fieldset>
+                <label for="Prénom">Prénom : <input type="text"></label><br><br>
+                <label for="Nom">Nom : <input type="text"></label><br><br>
+                <label for="Email">Email : <input type="email"></label><br>
+            </fieldset>
+        </li>
+        <li>
+            <h3> Address</h3>
+            <fieldset>
+                <label for="Address">Address : 
+                    <input type="text">
+                </label><br><br>
+                <label for="Code postal">Code postal : 
+                    <input type="number">
+                </label><br><br>
+                <label for="Ville">Ville : 
+                    <input type="text">
+                </label><br>
+            </fieldset>
+        </li>
+        <li>
+            <h3> Information de paiement</h3>
+            <fieldset>
+                <label for="Type de paiement">Type de paiement : 
+                    <img src="images/tile_0063.png" alt="image1">
+                    <input type="radio" name="dd">Bitcoin
+                    <img src="images/html-mastercard.png" alt="image2">
+                    <input type="radio" name="dd">Mastercard
+                    <img src="images/html-visa.png" alt="image3">
+                    <input type="radio" name="dd">Visa
+                </label><br><br>
+                <label for="Numéro de la carte bancaire">Numéro de la carte bancaire : 
+                    <input type="number">
+                </label><br><br>
+                <label for="Numéro du porte de la carte bancaire">Numéro du porte de la carte bancaire : 
+                    <input type="number">
+                </label><br><br>
+                <label for="Code de sécurité">Code de sécurité : 
+                    <input type="password">
+                </label><br>
+            </fieldset>
+        </li>
+        <li>
+            <h3> Confirmatin</h3>
+            <fieldset>
+                <label><input type="checkbox" name="CGV" id="checkbox">J'accepte les <a href="#">CGV</a></label><br><br>
+                <input type="submit" value="Envoyer"><br>
+            </fieldset>
+        </li>
+    </ol>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<style>
+    table,th,td
+    {
+    border:1px solid blue;
+    }
+    td:hover{
+        cursor: pointer;
+    }
+    .selected{
+        background-color: red;
+    }
+</style>
+<h1>Liste des Etudiants</h1>
+<table id="tab">
+    <tr><th>Code</th>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Semestre</th>
+    <th>Filiere</th></tr>
+
+</table>
+<button onclick="supp()">supprimer</button>
+<script src="java_script/tableSynthese.js"></script>
+</body>
+</html>
