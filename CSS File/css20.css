@@ -1,0 +1,9 @@
+div {
+    border-width:1px 2px 3px 2px;
+    border-style:solid dotted;
+    border-color:black red;
+    padding:0 10px;
+}
+h2 {
+    border-bottom:1px dashed green;
+    }

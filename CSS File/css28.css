@@ -1,0 +1,44 @@
+body {
+    font-family: monospace;
+   }
+button {
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+#green {
+    background: #4CAF50;
+}
+#black {
+    background: #555555;
+   }
+#blue {
+    background: #008CBA;
+   }
+h1 {
+    color: #008CBA;
+   }
+h1 span {
+    font-size: 10px;
+    font-style: italic;
+    background: #e7e7e7;
+    color: black;
+    border-radius: 5px;
+    padding: 0 5px;
+   }
+th {
+    background: #e7e7e7;
+   }
+strong {
+    background: #4CAF50;
+    color: white;
+    padding: 0 5px;
+   }
+.name strong {
+    background: #008CBA;
+   }
+   
+   

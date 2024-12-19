@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image":"../images/html-jim.jpg",
+        "name": "One Plus",
+        "price": 3000,
+        "inventory": 200,
+        "productCode": 3987
+    },
+    {
+        "id": 2,
+        "image":"../images/html-jim.jpg",
+        "name": "iPhone",
+        "price": 30000,
+        "inventory": 20,
+        "productCode": 3887
+    },
+    {
+        "id": 3,
+        "image":"../images/html-jim.jpg",
+        "name": "Samsung S23",
+        "price": 17000,
+        "inventory": 3400,
+        "productCode": 3787
+    }
+]

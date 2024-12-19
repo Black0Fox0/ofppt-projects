@@ -1,0 +1,19 @@
+blockquote {
+    margin:0;
+    padding:1px;
+    background:#C00000 url(images_css/html-mastercard.png)
+}
+p {
+    margin:20px;
+    padding:10px;
+    background-color:#FFFAFA;
+}
+p {
+    width:200px;
+    padding:40px;
+    margin:auto;
+    }
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+}

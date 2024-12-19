@@ -1,0 +1,46 @@
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* إخفاء القائمة ابتدائياً */
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    margin: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .menu a:hover {
+    color: #007BFF;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+  .icon {
+    font-size: 30px; /* حجم الرمز (يمكن تعديله) */
+  }
+  
+  /* تنسيقات الجهاز الصغير (الجوال) باستخدام وسيط الاستعلام */
+  @media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+      }
+    .menu {
+      display: none;
+    }
+    .menu.show {
+      display: block; /* إظهار القائمة عند الحاجة */
+    }
+  }
+  

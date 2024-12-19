@@ -1,0 +1,15 @@
+
+  
+body {
+    font-size: 1.25rem;
+    background-color: #f6f8fa;
+}  
+td {
+    line-height: 3rem;
+}
+#btn{
+  margin-left: 1px;
+}
+#ajouter_ligne,#modifier_ligne{
+  position: relative;
+}

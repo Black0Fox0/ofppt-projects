@@ -1,0 +1,27 @@
+h1, h2 {
+    text-transform: uppercase;
+    color: blue;
+}
+#header {
+    text-align: center;
+}
+#header img {
+    height: 50px;
+}
+p, ul, #header {
+    background: grey;
+    padding: 20px;
+    border: 1px blue solid;
+}
+ul {
+    padding-left: 35px;
+}
+table, th, td {
+    border: 1px blue solid;
+}
+th {
+    background: grey;
+    text-transform: uppercase;
+    text-align: center;
+}
+   

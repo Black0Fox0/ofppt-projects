@@ -1,0 +1,38 @@
+.y-1{
+    grid-area: head;
+    background-color: red;
+}
+
+.y-3{
+    grid-area: contenu;
+    background-color:yellow;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+.y-4{
+    grid-area: main;
+    background-color:springgreen ;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.y-5{
+    grid-area: footer;
+    background-color:darkmagenta;
+}
+div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.x{
+    display: grid;
+    grid-template-areas:
+    "head head head head"
+    "main contenu contenu contenu"
+    "footer footer footer footer";
+    padding: 10px;
+    grid-gap: 10px;
+}

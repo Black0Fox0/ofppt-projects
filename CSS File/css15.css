@@ -1,0 +1,37 @@
+body,html
+{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 110%;
+}
+h1{
+    color: navy;
+    font-size: 300%;
+    text-align: center;
+}
+h2{
+    font-size: 200%;
+    color: red;
+    padding-left: 20px;
+}
+a:link{
+    color: green;
+    text-decoration:none;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: red;
+    text-decoration:underline;
+}
+a:active{
+    color: aqua;
+}
+a:focus{
+    color: darkseagreen;
+}

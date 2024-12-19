@@ -1,0 +1,62 @@
+#div1{
+    background-color: wheat;
+    background-image: url(images_css/snow-black.gif);
+}
+
+#i1 {
+    width: 190px;
+   }
+#i2 {
+    width: 250px;
+   }
+#i3 {
+    width: 320px;
+   }
+
+p {
+    text-align: center;
+    margin-top: 110px;
+   }
+
+   body {
+    background: url(images_css/snow-black.gif)
+   }
+   div {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+   }
+   #a1 {
+    margin-top: 150px;
+    margin-right: 450px;
+   }
+   #a2 {
+    width: 150px;
+    height: 150px;
+   }
+   #a3 {
+    margin-top: 50px;
+    margin-left: 450px;
+    width: 85px;
+    height: 85px;
+   }
+#a1:hover {
+    cursor: pointer;
+}
+#a2:hover {
+    cursor: pointer;
+}
+#a3:hover {
+    cursor: pointer;
+}
+#a1:hover ~ #a2{
+    background: blue;
+}
+#a2:hover ~ #a3{
+    background: green;
+}
+#a3:hover{
+    background: red;
+}

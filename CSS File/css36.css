@@ -1,0 +1,112 @@
+
+body{
+    background-color: rgb(171, 240, 240);
+}
+
+.h-menu{
+    justify-content: space-between;
+}
+.menu-img{
+    display: inline;
+    width: 60%;
+}
+.badge{
+    position: relative;
+    bottom: 20px;
+}
+
+.card{
+    background-color: rgb(171, 240, 240);
+}
+.card-2{
+    overflow:hidden;
+
+}
+.card-body{
+    background-color: white;
+}
+.cursor{
+    cursor: help;
+}
+.card-art{
+    transition: transform 2s;
+    border: none;
+    cursor: pointer;
+}
+.card-art:hover{
+    transform: scale(1.1);
+    box-shadow: -5px 5px 15px black; 
+}
+.art-img{ 
+    margin: 1%;
+    cursor: pointer;
+}
+.art-img:hover{
+    box-shadow: 5px 5px 15px black; 
+    color: black;
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+
+}
+.card-i{
+    
+    text-align: right;
+}
+#imgA{
+    position: relative;
+    animation: i 5s infinite ;
+} 
+#imgA:hover{                
+    box-shadow: 5px 5px 10px black;
+}
+ 
+@keyframes i1{ 
+    0%{right:0% ; transform: rotateY(0deg);}
+    50%{right:90%; transform: rotateY(180deg);}
+    100%{right:0%; transform: rotateY(0deg);}
+} 
+
+                            
+
+
+
+@media only screen and (max-width:1200px) {
+    
+    .art{
+        margin: 5%;
+        background-color: white;
+    }
+    .card-art{
+        background-color: white;
+        overflow: hidden;
+    }
+    .row{
+        display: block;
+        width: 100%;
+    }
+    .col-md-2{
+        float: left;
+        width: 30.33%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    
+    .col-md-2{
+        width: 48%; 
+        margin: 1%;
+    }
+    .card-art:hover{
+        transform: none;
+    }
+} 
+
+
+
+

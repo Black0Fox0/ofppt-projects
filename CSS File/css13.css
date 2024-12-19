@@ -1,0 +1,36 @@
+h1{
+    font-size: 50px;
+    color: red;
+
+}
+
+form{
+    display: flex;
+}
+ol{
+    font-size: 20px;
+}
+li{
+    float: left;
+    margin: 20px;
+}
+fieldset{
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    background-color: greenyellow;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    width: 95%;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: aquamarine;
+    border: solid 2px black;
+}
+a:hover{
+    color: red;
+}
+

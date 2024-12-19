@@ -1,0 +1,454 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    color: rgb(255, 67, 67);
+    font-size: 40px;
+    text-align: center;
+}
+li{
+    margin: 10px;
+    padding: 15px;
+    list-style: none;
+    background-color: rgb(226, 43, 43);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+li:hover{
+    background-color: rgb(255, 65, 103);
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+
+
+
+@media only screen and (min-width : 720px){
+    body{
+        margin: 0px;
+    }
+    #li1{
+        float: left;
+        width: auto;
+        animation: x1 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y1 5s alternate infinite;
+    }
+    @keyframes x1{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 900px; top: 0px;}
+        50%{background-color: green; left: 800px; top: 200px;}
+        75%{background-color: blue;color: white; left: 700px; top: 300px;}
+        100%{background-color: purple; left: 500px; top: 100px;}
+    }
+    @keyframes y1{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li2{
+        float: left;
+        width: auto;
+        animation: x2 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y2 5s alternate infinite;
+    }
+    @keyframes x2{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 150px; top: 28px;}
+        50%{background-color: green; left: 90px; top: 200px;}
+        75%{background-color: blue;color: white; left: 121px; top: 350px;}
+        100%{background-color: purple; left: 133px; top: 182px;}
+    }
+    @keyframes y2{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li3{
+        float: left;
+        width: auto;
+        animation: x3 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y3 5s alternate infinite;
+    }
+    @keyframes x3{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 0px; top: 317px;}
+        50%{background-color: green; left: 150px; top: 67px;}
+        75%{background-color: blue;color: white; left: 102px; top: 229px;}
+        100%{background-color: purple; left: 13px; top: 298px;}
+    }
+    @keyframes y3{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li4{
+        float: left;
+        width: auto;
+        animation: x4 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y4 5s alternate infinite;
+    }
+    @keyframes x4{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 142px; top: 300px;}
+        50%{background-color: green; left: 129px; top: 289px;}
+        75%{background-color: blue;color: white; left: 14px; top: 380px;}
+        100%{background-color: purple; left: 37px; top: 59px;}
+    }
+    @keyframes y4{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li5{
+        float: left;
+        width: auto;
+        animation: x5 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y5 5s alternate infinite;
+    }
+    @keyframes x5{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 79px; top: 39px;}
+        50%{background-color: green; left: 30px; top: 249px;}
+        75%{background-color: blue;color: white; left: 120px; top: 200px;}
+        100%{background-color: purple; left: 49px; top: 230px;}
+    }
+    @keyframes y5{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li6{
+        float: left;
+        width: auto;
+        animation: x6 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y6 5s alternate infinite;
+    }
+    @keyframes x6{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 70px; top: 160px;}
+        50%{background-color: green; left: 45px; top: 230px;}
+        75%{background-color: blue;color: white; left: 20px; top: 290px;}
+        100%{background-color: purple; left: 50px; top: 30px;}
+    }
+    @keyframes y6{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li7{
+        float: left;
+        width: auto;
+        animation: x7 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y7 5s alternate infinite;
+    }
+    @keyframes x7{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 10px; top: 210px;}
+        50%{background-color: green; left: 40px; top: 270px;}
+        75%{background-color: blue;color: white; left: 110px; top: 300px;}
+        100%{background-color: purple; left: 90px; top: 320px;}
+    }
+    @keyframes y7{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li8{
+        float: left;
+        width: auto;
+        animation: x8 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y8 5s alternate infinite;
+    }
+    @keyframes x8{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 40px; top: 30px;}
+        50%{background-color: green; left: 150px; top: 270px;}
+        75%{background-color: blue;color: white; left: 33px; top: 20px;}
+        100%{background-color: purple; left: 110px; top: 270px;}
+    }
+    @keyframes y8{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li9{
+        float: left;
+        width: auto;
+        animation: x9 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y9 5s alternate infinite;
+    }
+    @keyframes x9{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 20px; top: 250px;}
+        50%{background-color: green; left: 40px; top: 250px;}
+        75%{background-color: blue;color: white; left: 32px; top: 330px;}
+        100%{background-color: purple; left: 12px; top: 30px;}
+    }
+    @keyframes y9{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li10{
+        float: left;
+        width: auto;
+        animation: x10 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y10 5s alternate infinite;
+    }
+    @keyframes x10{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 40px; top: 200px;}
+        50%{background-color: green; left: 10px; top: 20px;}
+        75%{background-color: blue;color: white; left: 100px; top: 20px;}
+        100%{background-color: purple; left: 70px; top: 200px;}
+    }
+    @keyframes y10{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li11{
+        float: left;
+        width: auto;
+        animation: x11 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y11 5s alternate infinite;
+    }
+    @keyframes x11{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 19px; top: 23px;}
+        50%{background-color: green; left: 60px; top: 200px;}
+        75%{background-color: blue;color: white; left: 45px; top: 350px;}
+        100%{background-color: purple; left: 90px; top: 125px;}
+    }
+    @keyframes y11{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li12{
+        float: left;
+        width: auto;
+        animation: x12 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y12 5s alternate infinite;
+    }
+    @keyframes x12{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 130px; top: 300px;}
+        50%{background-color: green; left: 40px; top: 200px;}
+        75%{background-color: blue;color: white; left: 20px; top: 200px;}
+        100%{background-color: purple; left: 30px; top: 20px;}
+    }
+    @keyframes y12{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+    #li13{
+        float: left;
+        width: auto;
+        animation: x13 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y13 5s alternate infinite;
+    }
+    @keyframes x13{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 20px; top: 250px;}
+        50%{background-color: green; left: 40px; top: 250px;}
+        75%{background-color: blue;color: white; left: 32px; top: 330px;}
+        100%{background-color: purple; left: 12px; top: 30px;}
+    }
+    @keyframes y13{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+    #li14{
+        float: left;
+        width: auto;
+        animation: x14 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y14 5s alternate infinite;
+    }
+    @keyframes x14{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 70px; top: 160px;}
+        50%{background-color: green; left: 45px; top: 230px;}
+        75%{background-color: blue;color: white; left: 20px; top: 290px;}
+        100%{background-color: purple; left: 50px; top: 30px;}
+    }
+    @keyframes y14{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+    #li15{
+        float: left;
+        width: auto;
+        animation: x15 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y15 5s alternate infinite;
+    }
+    @keyframes x15{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 79px; top: 39px;}
+        50%{background-color: green; left: 30px; top: 249px;}
+        75%{background-color: blue;color: white; left: 120px; top: 200px;}
+        100%{background-color: purple; left: 49px; top: 230px;}
+    }
+    @keyframes y15{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+    #li16{
+        float: left;
+        width: auto;
+        animation: x16 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y16 5s alternate infinite;
+    }
+    @keyframes x16{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 70px; top: 160px;}
+        50%{background-color: green; left: 45px; top: 230px;}
+        75%{background-color: blue;color: white; left: 20px; top: 290px;}
+        100%{background-color: purple; left: 50px; top: 30px;}
+    }
+    @keyframes y16{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li17{
+        float: left;
+        width: auto;
+        animation: x17 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y17 5s alternate infinite;
+    }
+    @keyframes x17{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 10px; top: 210px;}
+        50%{background-color: green; left: 40px; top: 270px;}
+        75%{background-color: blue;color: white; left: 110px; top: 300px;}
+        100%{background-color: purple; left: 90px; top: 320px;}
+    }
+    @keyframes y17{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li18{
+        float: left;
+        width: auto;
+        animation: x18 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y18 5s alternate infinite;
+    }
+    @keyframes x18{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 40px; top: 30px;}
+        50%{background-color: green; left: 150px; top: 270px;}
+        75%{background-color: blue;color: white; left: 33px; top: 20px;}
+        100%{background-color: purple; left: 110px; top: 270px;}
+    }
+    @keyframes y18{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+    #li19{
+        float: left;
+        width: auto;
+        animation: x19 5s alternate infinite ;
+        position: relative;
+    }
+    a{
+        animation: y19 5s alternate infinite;
+    }
+    @keyframes x19{
+        0%{background-color: red; left: 0px; top: 0px;}
+        25%{background-color: yellow; left: 20px; top: 250px;}
+        50%{background-color: green; left: 40px; top: 250px;}
+        75%{background-color: blue;color: white; left: 32px; top: 330px;}
+        100%{background-color: purple; left: 12px; top: 30px;}
+    }
+    @keyframes y19{
+        60%{color: black;}
+        75%{color: white;}
+        100%{color: black;}
+    }
+
+}

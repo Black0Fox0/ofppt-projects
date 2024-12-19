@@ -1,0 +1,41 @@
+
+body{
+    margin: 0;
+}
+.i{
+    border: 5px solid white;
+    background-color: #0f4d8f;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.c{
+    background-color: #0f4d8f;
+    text-align: center;
+    height: 350px;
+}
+h1{
+    color: white;
+    margin-top: 0;
+}
+
+@media only screen and (min-width : 720px){
+    .i{
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-bottom: 100px;
+    }
+}
+.a{
+    background: #0f4d8f;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+#i2{
+    border: 5px white solid;
+    border-radius: 35px;
+    padding: 35px;}
+
